@@ -1,10 +1,13 @@
 html {
   font-size: 18px;
-  font-family: Helvetica;
+  font-family: Helvetica, sans-serif;
+}
+body {
+  display: block;
 }
 .container {
   width: 960px;
-  margin: auto;
+  margin: 0 auto;
 }
 /* Logo */
 header {
@@ -29,15 +32,16 @@ header {
   padding-left: 0.5rem;
 }
 /* Banner */
-.banner {
+.img {
   background-image: url("../images/moto.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+}
+.banner {
   height: 25rem;
   display: flex;
-  justify-content: center;
-  width: 100%;
 }
 .new-arrival {
   font-weight: bold;
@@ -80,9 +84,8 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
-.agent {
+.product-image img {
   max-width: 8rem;
 }
 figure {
@@ -121,6 +124,14 @@ footer p {
   }
 }
 @media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: auto;
+  }
+  .new-arrival {
+  }
   figure {
     width: 47%;
   }
@@ -135,7 +146,50 @@ footer p {
     justify-content: center;
     align-items: center;
   }
-  .menu {
+}
+@media only screen and (max-width: 470px) {
+  /* Logo */
+  .logo-header h1 {
+    display: none;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  /* Banner */
+  .banner {
+    height: 15rem;
+  }
+  .new-arrival {
+    width: 100%;
+    margin: 10rem 0 0 0;
+    padding: 1rem 2rem;
+  }
+  .new-arrival h3 {
+    font-size: 0.77rem;
+  }
+  .new-arrival h1 {
+    font-size: 1rem;
+  }
+  /* Store Items */
+  .watch {
+    display: none;
+  }
+  figure {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* Location and Hours */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .location-hour {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+  /* Footer*/
+  footer p {
     text-align: center;
   }
 }
