@@ -25,41 +25,58 @@
   </header>
 
   <nav>
-    <ul>
-      <span><a href="#">Eyewear</a></span>
-      <span><a href="#">Apparel</a></span>
-      <span><a href="#">Gadgets</a></span>
-      <span><a href="#">Vehicles</a></span>
-      <span><a href="#">Classes</a></span>
-      <span><a href="#">Contact</a></span>
-    </ul>
+    <div class="flex container">
+      <span><a class="nav desktop" href="#">Eyewear</a></span>
+      <span><a class="nav desktop" href="#">Apparel</a></span>
+      <span><a class="nav desktop" href="#">Gadgets</a></span>
+      <span><a class="nav desktop" href="#">Vehicles</a></span>
+      <span><a class="nav desktop" href="#">Classes</a></span>
+      <span><a class="nav desktop" href="#">Contact</a></span>
+    </div>
+    <div>
+      <span class=" mobile-flex"><a class="nav menu" href="#">Menu</a></span>
+    </div>
   </nav>
 
   <section>
     <article>
-      <figure>
-        <img src="./resources/images/pen.png" alt="A black pen">
-        <h2>Exploding Pen</h2>
-      </figure>
-      <figure>
-        <img src="./resources/images/watch.png" alt="A silver watch">
-        <h2>Cellular Watch</h2>
-      </figure>
-      <figure>
-        <img src="./resources/images/glasses.png" alt="Dark glasses">
-        <h2>Thermal Glasses</h2>
-      </figure>
+      <div class="container flex">
+        <figure>
+          <div class="product-image">
+            <img class="agent pen" src="./resources/images/pen.png" alt="A black pen">
+          </div>
+          <h2>Exploding Pen</h2>
+        </figure>
+        <figure>
+          <div class="product-image">
+            <img class="agent watch" src="./resources/images/watch.png" alt="A silver watch">
+          </div>
+          <h2>Cellular Watch</h2>
+        </figure>
+        <figure class="glasses">
+          <div class="product-image">
+            <img class="agent" src="./resources/images/glasses.png" alt="Dark glasses">
+          </div>
+          <h2>Thermal Glasses</h2>
+        </figure>
+      </div>
     </article>
-    <article>
-      <h2>Location</h2>
-      <p>-47.346436, 84.32354</p>
-      <h2>Hours</h2>
-      <p>0800 - 1800</p>
+    <article class="flex container">
+      <div class="location-hour">
+        <h2>Location</h2>
+        <p>-47.346436, 84.32354</p>
+      </div>
+      <div class="location-hour">
+        <h2>Hours</h2>
+        <p>0800 - 1800</p>
+      </div>
     </article>
   </section>
 
   <footer>
-    <p>Copyright Secret Agent Supply Inc.</p>
+    <div class="container">
+      <p>Copyright Secret Agent Supply Inc.</p>
+    </div>
   </footer>
 
 </body>
